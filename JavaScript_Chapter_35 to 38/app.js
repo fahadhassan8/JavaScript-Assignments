@@ -67,3 +67,8 @@
 // }
 
 // Question 05
+
+// let sqNum = (a) =>{
+//     return a * a
+// }
+// document.write(sqNum(2));
