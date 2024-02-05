@@ -20,15 +20,15 @@
 
 // Question 03
 
-let addNum = () =>{
-    let num1 = +prompt("Write first Number");
-    let num2 = +prompt("Write second Number");
-    num1 = parseInt(num1);
-    num2 = parseInt(num2);
-    return num1 + num2
-}
+// let addNum = () =>{
+//     let num1 = +prompt("Write first Number");
+//     let num2 = +prompt("Write second Number");
+//     num1 = parseInt(num1);
+//     num2 = parseInt(num2);
+//     return num1 + num2
+// }
 
-document.write(addNum())
+// document.write(addNum())
 
 // Question 04 Calculator
 
@@ -42,5 +42,11 @@ if(operator == "+"){
     let add = (a,b) =>{
         return a + b;
     }
-    document.write(`The Sum of Two number ${num1} + ${num2} = ${add(num_1,num_2)}`)
+    document.write(`The Sum of Two Number ${num1} + ${num2} = ${add(num_1,num_2)}`)
+}
+else if(operator == "-"){
+    let sub = (a,b) =>{
+        return a - b
+    }
+    document.write(`Subtraction of Two Number ${num1} + ${num2} = ${sub(num_1,num_2)}`);
 }
