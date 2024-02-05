@@ -50,3 +50,9 @@ else if(operator == "-"){
     }
     document.write(`Subtraction of Two Number ${num1} + ${num2} = ${sub(num_1,num_2)}`);
 }
+else if(operator == "/"){
+    let div = (a,b) =>{
+        return a/b
+    }
+    document.write(`Multiplication of Two Number ${num1} / ${num2} = ${div(num_1,num_2)}`);
+}
