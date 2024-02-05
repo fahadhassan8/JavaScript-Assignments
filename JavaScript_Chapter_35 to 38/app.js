@@ -48,11 +48,20 @@ else if(operator == "-"){
     let sub = (a,b) =>{
         return a - b
     }
-    document.write(`Subtraction of Two Number ${num1} + ${num2} = ${sub(num_1,num_2)}`);
+    document.write(`Subtraction of Two Number ${num1} - ${num2} = ${sub(num_1,num_2)}`);
 }
 else if(operator == "/"){
     let div = (a,b) =>{
         return a/b
     }
-    document.write(`Multiplication of Two Number ${num1} / ${num2} = ${div(num_1,num_2)}`);
+    document.write(`Division of Two Number ${num1} / ${num2} = ${div(num_1,num_2)}`);
+}
+else if(operator == "*"){
+    let mul = (a,b) =>{
+        return a * b
+    }
+    document.write(`Multiplication of Two Number ${num1} * ${num2} = ${mul(num_1,num_2)}`);
+}
+else{
+    alert(`Should select any of these operators +,-,/,*`)
 }
