@@ -119,3 +119,21 @@
 //      document.write(`Area of a rectangle is = ${area} <br>`);
 // }
 // areaOfRec(width,height);
+
+// Question 08
+
+// let userInput = prompt("Enter a word");
+// let checkUserInput = "";
+
+// let inputUser = (U) =>{
+//      for(i = userInput.length - 1; i >= 0; i--){
+//           checkUserInput +=userInput[i];
+//      }
+//      if(checkUserInput === userInput){
+//           alert(`${userInput} is a palindrome word`);
+//      }
+//      else{
+//           alert(`${userInput} is not a palindrome word`);
+//      }
+// }
+// inputUser(userInput);
