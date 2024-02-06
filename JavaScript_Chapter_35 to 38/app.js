@@ -73,19 +73,34 @@
 // }
 // document.write(sqNum(2));
 
-var dayOfWk = prompt("enter day")
+// var dayOfWk = prompt("enter day")
 
-switch(dayOfWk) {
-     case "Sat" :
-     alert("Whoopee");
-     break;
-     case "Sun" :
-     alert("Whoopee");
-     break;
-     case "Fri" :
-     alert("TGIF!");
-     break;
-     default :
-     alert("Shoot me now!");
+// switch(dayOfWk) {
+//      case "Sat" :
+//      alert("Whoopee");
+//      break;
+//      case "Sun" :
+//      alert("Whoopee");
+//      break;
+//      case "Fri" :
+//      alert("TGIF!");
+//      break;
+//      default :
+//      alert("Shoot me now!");
+//      }
+
+// Question 06
+
+let num1 = +prompt("Enter First Number");
+let num2 = +prompt("Enter Last Number");
+num1 = Number(num1);
+num2 = Number(num2);
+
+let displayCount = (start,end) =>{
+     document.write("The First Number ", start, "</br>");
+     document.write("The Last Number ", end, "</br>");
+     for(i = start; i <= end; i++){
+          document.write(i, " ");
      }
-    
+}
+displayCount(num1,num2);
