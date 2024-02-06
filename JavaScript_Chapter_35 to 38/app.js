@@ -137,3 +137,19 @@
 //      }
 // }
 // inputUser(userInput);
+
+// Question 09
+
+let str1 = 'the quick brown fox';
+
+let capitalizeFirstLetterOfEachWord = (str) =>{
+     let words = str.split(" ");
+     for(i = 0; i < words.length; i++){
+          words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1)
+     }
+     return words.join(" ")
+}
+str1 = capitalizeFirstLetterOfEachWord(str1);
+console.log(str1)
+
+let a = str1.split(" ");
