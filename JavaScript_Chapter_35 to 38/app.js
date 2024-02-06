@@ -72,3 +72,20 @@
 //     return a * a
 // }
 // document.write(sqNum(2));
+
+var dayOfWk = prompt("enter day")
+
+switch(dayOfWk) {
+     case "Sat" :
+     alert("Whoopee");
+     break;
+     case "Sun" :
+     alert("Whoopee");
+     break;
+     case "Fri" :
+     alert("TGIF!");
+     break;
+     default :
+     alert("Shoot me now!");
+     }
+    
