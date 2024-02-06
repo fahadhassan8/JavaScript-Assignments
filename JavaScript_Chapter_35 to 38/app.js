@@ -91,19 +91,31 @@
 
 // Question 06
 
-// 
+// let num1 = +prompt("Enter First Number");
+// let num2 = +prompt("Enter Last Number");
+// num1 = Number(num1);
+// num2 = Number(num2);
+
+// let displayCount = (start,end) =>{
+//      document.write("The First Number ", start, "</br>");
+//      document.write("The Last Number ", end, "</br>");
+//      for(i = start; i <= end; i++){
+//           document.write(i, " ");
+//      }
+// }
+// displayCount(num1,num2);
 
 // Question 07
 
-let width = +prompt("Calculate an area of a rectangle","Width = 20");
-let height = +prompt("Calculate an area of a rectangle","Height = 30");
-width = Number(width);
-height = Number(height);
+// let width = +prompt("Calculate an area of a rectangle","Width = 20");
+// let height = +prompt("Calculate an area of a rectangle","Height = 30");
+// width = Number(width);
+// height = Number(height);
 
-let areaOfRec = (w,h) => {
-     let area = width * height
-     document.write(`Width of a rectangle is = ${w} <br> `);
-     document.write(`Height of a rectangle is = ${h} <br> `);
-     document.write(`Area of a rectangle is = ${area} <br>`);
-}
-areaOfRec(width,height);
+// let areaOfRec = (w,h) => {
+//      let area = width * height
+//      document.write(`Width of a rectangle is = ${w} <br> `);
+//      document.write(`Height of a rectangle is = ${h} <br> `);
+//      document.write(`Area of a rectangle is = ${area} <br>`);
+// }
+// areaOfRec(width,height);
