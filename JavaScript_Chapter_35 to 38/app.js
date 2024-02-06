@@ -94,3 +94,16 @@
 // 
 
 // Question 07
+
+let width = +prompt("Calculate an area of a rectangle","Width = 20");
+let height = +prompt("Calculate an area of a rectangle","Height = 30");
+width = Number(width);
+height = Number(height);
+
+let areaOfRec = (w,h) => {
+     let area = width * height
+     document.write(`Width of a rectangle is = ${w} <br> `);
+     document.write(`Height of a rectangle is = ${h} <br> `);
+     document.write(`Area of a rectangle is = ${area} <br>`);
+}
+areaOfRec(width,height);
