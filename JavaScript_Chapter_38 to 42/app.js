@@ -60,3 +60,17 @@
 // console.log(customFunction(array,'f'));
 
 // Question 05
+
+let sentence = 'Hello there my name is fahad hassan currently i am studying web development in SMIT my mentor is sir ghous';
+
+function deletVowel(sentence){ // parameter diye bgr b kam hojyga
+    let vowels = 'aeiouAEIOU';
+    let result = "";
+    for(let i = 0; i < sentence.length; i++){
+        if(!vowels.includes(sentence[i])){
+            result += sentence[i];
+        }
+    }
+    return result
+}
+console.log(deletVowel(sentence))
