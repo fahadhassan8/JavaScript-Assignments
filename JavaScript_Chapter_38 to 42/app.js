@@ -46,13 +46,17 @@
 
 // Question 04
 
-let array = ["a","b",'c','d','e'];
-let arr = array.indexOf('d')
-console.log(arr)
-function customfun(array, target){
-    for(let i = 0; i < array.length; i++){
+// let array = ['a','b','c','d','e'];
 
+// function customFunction(array, target){
+//     for(let i = 0; i < array.length; i++){
+//         if(array[i] === target){
+//             return i; // if value hogi to return krega
+//             break;
+//         }
+//     }return -1; // agar value nhi milegi to -1 return krega
+// }
+// console.log(customFunction(array,'c'));
+// console.log(customFunction(array,'f'));
 
-    }
-
-}
+// Question 05
