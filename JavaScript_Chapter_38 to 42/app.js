@@ -46,6 +46,13 @@
 
 // Question 04
 
-function custom(){
-    
+let array = ["a","b",'c','d','e'];
+let arr = array.indexOf('d')
+console.log(arr)
+function customfun(array, target){
+    for(let i = 0; i < array.length; i++){
+
+
+    }
+
 }
