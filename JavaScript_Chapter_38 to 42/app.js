@@ -73,4 +73,6 @@ function deletVowel(sentence){ // parameter diye bgr b kam hojyga
     }
     return result
 }
-console.log(deletVowel(sentence))
+console.log(deletVowel(sentence));
+
+// Question 06
