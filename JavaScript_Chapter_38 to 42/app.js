@@ -163,4 +163,12 @@
 
 // Question 09
 
+let amountInHundreads = 4;
 
+function calculateCurrencyNote(amountInHundreads){
+    let amount = amountInHundreads * 100;
+    let note100 = 0;
+    let note50 = 0;
+    let note10 = 0;
+    
+}
