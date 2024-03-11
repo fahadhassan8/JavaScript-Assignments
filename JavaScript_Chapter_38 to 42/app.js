@@ -163,12 +163,33 @@
 
 // Question 09
 
-let amountInHundreads = 4;
+let amountInHundreds = 4;
 
-function calculateCurrencyNote(amountInHundreads){
-    let amount = amountInHundreads * 100;
+function calculateCurrencyNote(amountInHundreds){
+    //converting input amount to actual amount
+    let amount = amountInHundreds * 100;
+
+    //Initializee Variable to store the count of each denomination
+    
     let note100 = 0;
     let note50 = 0;
     let note10 = 0;
+
+    //Calculate the count of each denominaation
+    note100 = Math.floor(amount / 100);// Number of 100 rupee notes
     
+    amount %= 100; // Update the amount after giving out 100 rupee notes
+    
+    note50 = Math.floor(amount / 50);// Number of 50 rupee notes
+
+    amount %= 50; // Update the amount after giving out 50 rupee notes
+    
+    note10 = Math.floor(amount / 10);// Number of 10 rupee notes
+    
+    console.log(`Number of 100 rupees note: ${note100}`);
+    console.log(`Number of 50 rupees note: ${note50}`);
+    console.log(`Number of 10 rupees note: ${note10}`);
 }
+calculateCurrencyNote(amountInHundreds)
+
+
