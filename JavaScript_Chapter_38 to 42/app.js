@@ -61,18 +61,61 @@
 
 // Question 05
 
-let sentence = 'Hello there my name is fahad hassan currently i am studying web development in SMIT my mentor is sir ghous';
+// let sentence = 'Hello there my name is fahad hassan currently i am studying web development in SMIT my mentor is sir ghous';
 
-function deletVowel(sentence){ // parameter diye bgr b kam hojyga
-    let vowels = 'aeiouAEIOU';
-    let result = "";
-    for(let i = 0; i < sentence.length; i++){
-        if(!vowels.includes(sentence[i])){
-            result += sentence[i];
-        }
-    }
-    return result
-}
-console.log(deletVowel(sentence));
+// function deletVowel(sentence){ // parameter diye bgr b kam hojyga
+//     let vowels = 'aeiouAEIOU';
+//     let result = "";
+//     for(let i = 0; i < sentence.length; i++){
+//         if(!vowels.includes(sentence[i])){
+//             result += sentence[i];
+//         }
+//     }
+//     return result
+// }
+// console.log(deletVowel(sentence));
 
 // Question 06
+
+function countSuccessiveVowels(text) {
+    let count = 0;
+    text = text.toLowerCase(); // Convert the text to lowercase to handle case-insensitive matching
+    for (let i = 0; i < text.length - 1; i++) {
+        switch (text[i] + text[i+1]) {
+            case 'aa':
+            case 'ae':
+            case 'ai':
+            case 'ao':
+            case 'au':
+            case 'ea':
+            case 'ee':
+            case 'ei':
+            case 'eo':
+            case 'eu':
+            case 'ia':
+            case 'ie':
+            case 'ii':
+            case 'io':
+            case 'iu':
+            case 'oa':
+            case 'oe':
+            case 'oi':
+            case 'oo':
+            case 'ou':
+            case 'ua':
+            case 'ue':
+            case 'ui':
+            case 'uo':
+            case 'uu':
+                count++;
+                break;
+            default:
+                break;
+        }
+    }
+    return count;
+}
+
+// Example usage:
+const text = "Pleases read this application and give me gratuity";
+console.log("Number of occurrences of any two vowels in succession:", countSuccessiveVowels(text));
