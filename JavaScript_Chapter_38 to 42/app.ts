@@ -1,13 +1,17 @@
 // Question 01
+
 // function power(a,b){
 //     return Math.pow(a,b); // a is a base num called sub and b is power called sup
 // }
 // let result = power(2,3);
 // console.log(result);
+
 // let num = 25;
 // let sqR = Math.sqrt(num) // squareRoot will be 5
 // console.log(sqR)
+
 // Question 02
+
 // function calculateS(a,b,c){
 //     return (a + b + c)/2
 // }
@@ -21,7 +25,9 @@
 // let c = 6;
 // let area = calculateTraingleArea(a,b,c);
 // console.log(area);
+
 // Question 03
+
 // function calculateAverage(subject1, subject2, subject3){
 //     return (subject1 + subject2 + subject3)/3
 // }
@@ -37,8 +43,11 @@
 //     console.log("Percentage: " + percentage);
 // }
 // mainFunction(70,50,60)
+
 // Question 04
+
 // let array = ['a','b','c','d','e'];
+
 // function customFunction(array, target){
 //     for(let i = 0; i < array.length; i++){
 //         if(array[i] === target){
@@ -49,8 +58,11 @@
 // }
 // console.log(customFunction(array,'c'));
 // console.log(customFunction(array,'f'));
+
 // Question 05
+
 // let sentence = 'Hello there my name is fahad hassan currently i am studying web development in SMIT my mentor is sir ghous';
+
 // function deletVowel(sentence){ // parameter diye bgr b kam hojyga
 //     let vowels = 'aeiouAEIOU';
 //     let result = "";
@@ -62,7 +74,9 @@
 //     return result
 // }
 // console.log(deletVowel(sentence));
+
 // Question 06
+
 // function countSuccessiveVowels(text) {
 //     let count = 0;
 //     text = text.toLowerCase(); // Convert the text to lowercase to handle case-insensitive matching
@@ -101,11 +115,15 @@
 //     }
 //     return count;
 // }
+
 // // Example usage:
 // const text = "Pleases read this application and give me gratuity";
 // console.log("Number of occurrences of any two vowels in succession:", countSuccessiveVowels(text));
+
 // Question 07
+
 // let distanceInKm = 150;
+
 // function distanceInMeter(km){
 //     return km * 150000
 // }
@@ -122,11 +140,14 @@
 // console.log("Distance In Feet:",distanceInFeet(distanceInKm));
 // console.log("Distance In Inches:",distanceInInches(distanceInKm));
 // console.log("Distance In Centimeters:",distanceInCentimeters(distanceInKm));
+
 // Question 08
+
 // let hoursWorked = 220;
 // let standardHours = 208;
 // let hourlyRate = 216.346;
 // let overtimeRate = 1.5;
+
 // function calculateOvertimePay(hoursWorked){
 //     if(hoursWorked <= standardHours){
 //         return 0;
@@ -139,23 +160,36 @@
 // }
 // let overtimePay = calculateOvertimePay(hoursWorked);
 // console.log(`Overtime pay: Rs, ${overtimePay}/=`);
+
 // Question 09
-// var amountInHundreds = 4;
-// function calculateCurrencyNote(amountInHundreds) {
-//     //converting input amount to actual amount
-//     var amount = amountInHundreds * 100;
-//     //Initializee Variable to store the count of each denomination
-//     var note100 = 0;
-//     var note50 = 0;
-//     var note10 = 0;
-//     //Calculate the count of each denominaation
-//     note100 = Math.floor(amount / 100); // Number of 100 rupee notes
-//     amount %= 100; // Update the amount after giving out 100 rupee notes
-//     note50 = Math.floor(amount / 50); // Number of 50 rupee notes
-//     amount %= 50; // Update the amount after giving out 50 rupee notes
-//     note10 = Math.floor(amount / 10); // Number of 10 rupee notes
-//     console.log("Number of 100 rupees note: ".concat(note100));
-//     console.log("Number of 50 rupees note: ".concat(note50));
-//     console.log("Number of 10 rupees note: ".concat(note10));
-// }
-// calculateCurrencyNote(amountInHundreds);
+
+let amountInHundreds = 4;
+
+function calculateCurrencyNote(amountInHundreds){
+    //converting input amount to actual amount
+    let amount = amountInHundreds * 100;
+
+    //Initializee Variable to store the count of each denomination
+    
+    let note100 = 0;
+    let note50 = 0;
+    let note10 = 0;
+
+    //Calculate the count of each denominaation
+    note100 = Math.floor(amount / 100);// Number of 100 rupee notes
+    
+    amount %= 100; // Update the amount after giving out 100 rupee notes
+    
+    note50 = Math.floor(amount / 50);// Number of 50 rupee notes
+
+    amount %= 50; // Update the amount after giving out 50 rupee notes
+    
+    note10 = Math.floor(amount / 10);// Number of 10 rupee notes
+    
+    console.log(`Number of 100 rupees note: ${note100}`);
+    console.log(`Number of 50 rupees note: ${note50}`);
+    console.log(`Number of 10 rupees note: ${note10}`);
+}
+calculateCurrencyNote(amountInHundreds)
+
+
