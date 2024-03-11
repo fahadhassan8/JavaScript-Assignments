@@ -143,4 +143,18 @@
 
 // Question 08
 
+let hoursWorked = 208;
 
+function calculateOvertimePay(hoursWorked){
+    standardHours = 40;
+    hourlyRate = 12;
+    overtimeRate = 1.5;
+    if(hoursWorked <= standardHours){
+        return 0
+    }else{
+        overtimeHours = hoursWorked - standardHours;
+        overtimePay = overtimeHours * (hourlyRate * overtimeRate);
+        return overtimePay
+    }
+}
+console.log(calculateOvertimePay(hoursWorked))
