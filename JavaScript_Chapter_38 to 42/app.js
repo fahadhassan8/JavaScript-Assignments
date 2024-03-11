@@ -143,4 +143,24 @@
 
 // Question 08
 
-let
+// let hoursWorked = 220;
+// let standardHours = 208;
+// let hourlyRate = 216.346;
+// let overtimeRate = 1.5;
+
+// function calculateOvertimePay(hoursWorked){
+//     if(hoursWorked <= standardHours){
+//         return 0;
+//     }
+//     else{
+//         let overtimeHours = hoursWorked - standardHours;
+//         let overtimePay = overtimeHours * (hourlyRate * overtimeRate);
+//         return Math.round(overtimePay);
+//     }
+// }
+// let overtimePay = calculateOvertimePay(hoursWorked);
+// console.log(`Overtime pay: Rs, ${overtimePay}/=`);
+
+// Question 09
+
+
