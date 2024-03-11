@@ -77,45 +77,70 @@
 
 // Question 06
 
-function countSuccessiveVowels(text) {
-    let count = 0;
-    text = text.toLowerCase(); // Convert the text to lowercase to handle case-insensitive matching
-    for (let i = 0; i < text.length - 1; i++) {
-        switch (text[i] + text[i+1]) {
-            case 'aa':
-            case 'ae':
-            case 'ai':
-            case 'ao':
-            case 'au':
-            case 'ea':
-            case 'ee':
-            case 'ei':
-            case 'eo':
-            case 'eu':
-            case 'ia':
-            case 'ie':
-            case 'ii':
-            case 'io':
-            case 'iu':
-            case 'oa':
-            case 'oe':
-            case 'oi':
-            case 'oo':
-            case 'ou':
-            case 'ua':
-            case 'ue':
-            case 'ui':
-            case 'uo':
-            case 'uu':
-                count++;
-                break;
-            default:
-                break;
-        }
-    }
-    return count;
-}
+// function countSuccessiveVowels(text) {
+//     let count = 0;
+//     text = text.toLowerCase(); // Convert the text to lowercase to handle case-insensitive matching
+//     for (let i = 0; i < text.length - 1; i++) {
+//         switch (text[i] + text[i+1]) {
+//             case 'aa':
+//             case 'ae':
+//             case 'ai':
+//             case 'ao':
+//             case 'au':
+//             case 'ea':
+//             case 'ee':
+//             case 'ei':
+//             case 'eo':
+//             case 'eu':
+//             case 'ia':
+//             case 'ie':
+//             case 'ii':
+//             case 'io':
+//             case 'iu':
+//             case 'oa':
+//             case 'oe':
+//             case 'oi':
+//             case 'oo':
+//             case 'ou':
+//             case 'ua':
+//             case 'ue':
+//             case 'ui':
+//             case 'uo':
+//             case 'uu':
+//                 count++;
+//                 break;
+//             default:
+//                 break;
+//         }
+//     }
+//     return count;
+// }
 
-// Example usage:
-const text = "Pleases read this application and give me gratuity";
-console.log("Number of occurrences of any two vowels in succession:", countSuccessiveVowels(text));
+// // Example usage:
+// const text = "Pleases read this application and give me gratuity";
+// console.log("Number of occurrences of any two vowels in succession:", countSuccessiveVowels(text));
+
+// Question 07
+
+// let distanceInKm = 150;
+
+// function distanceInMeter(km){
+//     return km * 150000
+// }
+// function distanceInFeet(km){
+//     return km * 492126
+// }
+// function distanceInInches(km){
+//     return km * 5,905,515
+// }
+// function distanceInCentimeters(km){
+//     return km * 15000000
+// }
+// console.log("Distance In Meter:",distanceInMeter(distanceInKm));
+// console.log("Distance In Feet:",distanceInFeet(distanceInKm));
+// console.log("Distance In Inches:",distanceInInches(distanceInKm));
+// console.log("Distance In Centimeters:",distanceInCentimeters(distanceInKm));
+
+// Question 08
+
+
