@@ -31,3 +31,4 @@ for(let i = 0; i < mobileList.length; i++){
     mobileGallery.appendChild(img);
 }
 
+// Question 04
