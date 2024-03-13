@@ -42,17 +42,19 @@ function restoreImg(){
 
 // Question 05
 
-let counterValue = 0;
 let counter = document.getElementById('counter');
+counter.style.fontSize = "2rem";
+counter.style.color = "blue";
+let counterValue = 0;
 
-function updateCounter(){
+function updateCounterValue(){
     counter.textContent = counterValue
 }
 function increaseCounter(){
     counterValue++
-    updateCounter()   
+    updateCounterValue()
 }
 function decreaseCounter(){
     counterValue--
-    updateCounter()   
+    updateCounterValue()
 }
