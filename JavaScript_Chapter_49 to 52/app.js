@@ -46,4 +46,7 @@ function see_more(event){
 }
 changeText.addEventListener('click',see_more);
 
-function
+function changeFontFamily(fontFamily){
+    text.style.fontFamily = 'Arial'
+}
+changeFontFamily('Arial')
