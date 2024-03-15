@@ -49,4 +49,8 @@ changeText.addEventListener('click',see_more);
 function changeFontFamily(fontFamily){
     text.style.fontFamily = 'Arial'
 }
-changeFontFamily('Arial')
+changeFontFamily('Arial');
+
+// Qustion 03
+
+
