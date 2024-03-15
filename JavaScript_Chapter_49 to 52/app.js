@@ -24,28 +24,26 @@ function signupForm(event){
 }
 // Qustion 02
 
-let text = document.getElementById('text');
+let text = document.querySelector('.text');
 let changeText = document.getElementById('change-text');
-let fullText = `Dolorum consequatur est vel!
-Cumque dolore similique aliquid, libero quasi itaque delectus, eaque repudiandae neque tempora magni? Fugiat atque cum dolores amet placeat. Consequuntur obcaecati nobis ut quos corporis molestias et quidem qui quae?
-Error qui optio debitis eligendi harum corrupti velit incidunt exercitationem, est ad nihil quod cumque aut amet iure hic laudantium quis magni ullam et sunt perferendis numquam repudiandae modi? Quidem.
-Laudantium, enim temporibus! Delectus voluptatem mollitia voluptate libero veritatis eius cumque in, unde dolorem quaerat explicabo accusamus iste doloremque labore sapiente cupiditate, quos beatae voluptates facilis. Praesentium impedit tempora repudiandae?
-eligendi harum corrupti velit incidunt exercitationem, est ad nihil quod cumque aut amet iure hic laudantium quis magni ullam et sunt perferendis numquam repudiandae modi? Quidem.
-Laudantium, enim temporibus! Delectus voluptatem mollitia voluptate libero veritatis eius cumque in, unde dolorem quaerat explicabo accusamus iste doloremque labore sapiente cupiditate, quos beatae voluptates facilis. Praesentium impedit tempora repudiandae
-eligendi harum corrupti velit incidunt exercitationem, est ad nihil quod cumque aut amet iure hic laudantium quis magni ullam et sunt perferendis numquam repudiandae modi? Quidem.
-Laudantium, enim temporibus! Delectus voluptatem mollitia voluptate libero veritatis eius cumque in, unde dolorem quaerat explicabo accusamus iste doloremque labore sapiente cupiditate, quos beatae voluptates facilis. Praesentium impedit tempora repudiandae
-`
-let lessText = `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id nobis minus harum maxime hic inventore tenetur fuga eaque nisi? Repudiandae accusamus illo impedit explicabo dignissimos eveniet natus, aspernatur quis fugiat.
-Ducimus hic sapiente doloremque molestiae distinctio fuga laborum consectetur, voluptates tempore amet nostrum? Qui quam voluptas temporibus commodi architecto quia cum dolor sit, eos quo consequuntur.`
+let lessText = `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium incidunt sed at dignissimos quisquam rem maiores amet placeat, saepe eligendi ducimus? Vero, sapiente omnis ea libero ducimus eos sequi ut!
+Nesciunt labore repudiandae laboriosam quibusdam blanditiis sint voluptas nobis ipsum. Repellat, blanditiis? Assumenda, exercitationem, tenetur reprehenderit sit iste amet, fugit eum a at nemo iure qui veritatis ex. Quae, ipsa.`;
+let fullText = `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium incidunt sed at dignissimos quisquam rem maiores amet placeat, saepe eligendi ducimus? Vero, sapiente omnis ea libero ducimus eos sequi ut!
+Nesciunt labore repudiandae laboriosam quibusdam blanditiis sint voluptas nobis ipsum. Repellat, blanditiis? Assumenda, exercitationem, tenetur reprehenderit sit iste amet, fugit eum a at nemo iure qui veritatis ex.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium incidunt sed at dignissimos quisquam rem maiores amet placeat, saepe eligendi ducimus? Vero, sapiente omnis ea libero ducimus eos sequi ut!
+Nesciunt labore repudiandae laboriosam quibusdam blanditiis sint voluptas nobis ipsum. Repellat, blanditiis? Assumenda, exercitationem, tenetur reprehenderit sit iste amet, fugit eum a at nemo iure qui veritatis ex.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium incidunt sed at dignissimos quisquam rem maiores amet placeat, saepe eligendi ducimus? Vero, sapiente omnis ea libero ducimus eos sequi ut!
+Nesciunt labore repudiandae laboriosam quibusdam blanditiis sint voluptas nobis ipsum. Repellat, blanditiis? Assumenda, exercitationem, tenetur reprehenderit sit iste amet, fugit eum a at nemo iure qui veritatis ex.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium incidunt sed at dignissimos quisquam rem maiores amet placeat, saepe eligendi ducimus? Vero, sapiente omnis ea libero ducimus eos sequi ut!
+Nesciunt labore repudiandae laboriosam quibusdam blanditiis sint voluptas nobis ipsum. Repellat, blanditiis? Assumenda, exercitationem, tenetur reprehenderit sit iste amet, fugit eum a at nemo iure qui veritatis ex.`;
+
 function see_more(event){
     event.preventDefault()
-    if(changeText.innerHTML === 'See More'){
-        changeText.innerText = "See Less"
-        text.innerHTML = fullText
-    }
-    else{
-        text.innerHTML = lessText
-        changeText.innerHTML = "See More";
+    if(changeText.innerHTML === "See More"){
+        text.innerHTML = fullText;
+        changeText.innerText = "See Less";
+    }else{
+        text.innerHTML = lessText;
+        changeText.innerText = "See More"
     }
 }
-changeText.addEventListener('click', see_more)
+changeText.addEventListener('click',see_more);
+
+function
