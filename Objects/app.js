@@ -44,6 +44,7 @@ let userInfo = {
     country: "Pakistan"
 }
                             // FIRST METHOD
+
 if(userInfo.age === 25 && userInfo.country === "Pakistan"){
     console.log("User Country is: Pakistan & User age is 25");
 }else{
@@ -66,3 +67,18 @@ console.log('Does "Age" Property Exist in User Information?', agePropertyExist);
 console.log("Does 'Country' Property Exist in User Information?", countryPropertyExist);
 console.log("Does 'First Name' Property Exist in User Information?", firstNamePropertyExist);
 console.log("Does 'Last Name' Property Exist in User Information?", lastNamePropertyExist);
+
+// QUESTION 03
+
+function Person (name, age, city){
+    this.name = name;
+    this.age = age;
+    this.city = city;
+}
+let person1 = new Person("Fahad","25","Karachi");
+let person2 = new Person("Adeel","21","Karachi");
+let person3 = new Person("Zohaib","22","Karachi");
+
+console.log(person1);
+console.log(person2);
+console.log(person3);
