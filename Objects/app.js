@@ -92,3 +92,18 @@ function Candidate(name, gender, address, education, profession){
     this.education = education;
     this.profession = profession;
 }
+function addRecord(){
+    let name = document.getElementById('name').value;
+    let gender = document.querySelector('input[name="gender"]:checked').value;
+    let address = document.getElementById('address');
+    let education = document.getElementById('education');
+    let profession = document.getElementById('profession');
+
+    let newCandidate = new Candidate(name, gender, address, education, profession);
+
+    // localStorage.setItem() ka istemal karke har record ko store kar sakte hain.
+    // localStorage.getItem() ka istemal karke records ko retrieve kar sakte hain.
+    localStorage.setItem(name, JSON.stringify(newCandidate));
+    document.getElementById('personForm').reset()
+}
+
