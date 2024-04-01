@@ -82,3 +82,13 @@ let person3 = new Person("Zohaib","22","Karachi");
 console.log(person1);
 console.log(person2);
 console.log(person3);
+
+// QUESTION 04  
+
+function Candidate(name, gender, address, education, profession){
+    this.name = name;
+    this.gender = gender;
+    this.address = address;
+    this.education = education;
+    this.profession = profession;
+}
