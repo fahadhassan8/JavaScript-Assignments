@@ -1,20 +1,29 @@
 // Qustion 01
 
-let mainContent = document.getElementById('main-content');
-//Display all child elements
+let mainContent = document.getElementById("main-content");
+
+//Display all childs of main content
+
 console.log(mainContent.children);
-let render = document.getElementsByClassName('render');
-for(let elements of render){
-    console.log(elements.innerHTML)
+
+let renderElements = document.getElementsByClassName("render");
+
+for (elements of renderElements) {
+  console.log(elements.innerHTML);
 }
-let firstName = document.getElementById('first-name');
+
+// Fill input value whose element id first-name using javascript
+
+let firstName = document.getElementById("first-name");
 
 firstName.value = "Alex";
 
-let lastName = document.getElementById('last-name');
+// Repeat part iv for id ”last-name” and “email”
+
+let lastName = document.getElementById("last-name");
 
 lastName.value = "Bank";
 
-let email = document.getElementById('email');
+let email = document.getElementById("email");
 
 email.value = "alexbank@example.com";
